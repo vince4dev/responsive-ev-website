@@ -1,0 +1,143 @@
+.header_wrapper {
+  background: url("./../../assets/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: rgb(2, 0, 36); */
+  background: radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+
+.header_wrapper .content {
+  width: 100%;
+  z-index: 9;
+  color: #fff;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 120px 0;
+}
+
+.header_wrapper .content small {
+  color: var(--primary-color);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header_wrapper .content h1 {
+  font-size: 65px;
+  line-height: 85px;
+  text-transform: capitalize;
+}
+.header_wrapper .content h1 span {
+  color: var(--primary-color);
+  display: block;
+}
+
+.header_wrapper .content p {
+  color: rgba(255, 255, 255, 1);
+  width: 40%;
+  font-size: 15px;
+}
+
+.header_wrapper .content button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.header_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.clients_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.clients_wrapper img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 -6px;
+}
+
+.clients_wrapper span {
+  margin-left: 20px;
+  color: var(--primary-color);
+  position: relative;
+}
+.clients_wrapper span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-color);
+  transition: 0.6s;
+}
+
+.clients_wrapper:hover span::after {
+  width: 100%;
+}
+
+@media screen and (max-width:1100px) {
+  .header_wrapper .content {
+    margin: 60px 0;
+  }
+
+  .header_wrapper .content h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .header_wrapper .content p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header_wrapper {
+    background-position-x: center;
+  }
+  
+  .header_wrapper::after {
+      background: radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(0, 0, 0, 1) 100%);
+
+    }
+}
+
+@media screen and (max-width:500px) {
+  .header_wrapper .content small {
+    text-align: center;
+  }
+
+  .header_wrapper .content h1 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .header_wrapper .content p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+}

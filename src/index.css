@@ -37,3 +37,11 @@ button:hover {
 button:active {
   transform: scale(0.85);
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 100px 12%;
+  width: 100%;
+}
