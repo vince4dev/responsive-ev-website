@@ -15,6 +15,10 @@
   --primary-color: #96e64c;
 }
 
+body {
+  background: #000;
+}
+
 button {
   height: 45px;
   width: 150px;
@@ -44,4 +48,8 @@ button:active {
   gap: 18px;
   padding: 100px 12%;
   width: 100%;
+}
+
+.section_title {
+  color: #96e64c;
 }
