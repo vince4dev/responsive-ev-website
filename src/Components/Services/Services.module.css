@@ -1,0 +1,114 @@
+.service_wrapper {
+  color: #fff;
+  align-items: center;
+}
+
+.service_wrapper h2 {
+  font-size: 50px;
+}
+
+.service_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.service_container .service_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 180px 0;
+}
+
+.service_container .service_cards img {
+  padding: 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: #96e64c;
+}
+.service_container .service_cards h3 {
+  font-size: 28px;
+  margin: 12px 0;
+}
+.service_container .service_cards p {
+  font-size: 16px;
+  color: rgba(131, 131, 131, 0.8);
+  font-weight: 400;
+}
+
+#serviceImg {
+  height: 800px;
+}
+
+.service_container .service_cards:nth-of-type(2) .service_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.service_container .service_cards:nth-of-type(2) .service_card p,
+.service_container .service_cards:nth-of-type(2) .service_card h3 {
+  text-align: end;
+}
+
+.service_card {
+  position: relative;
+  padding: 30px 25px;
+  background: linear-gradient(0deg, #5bb902, transparent);
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.service_card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.9%;
+  left: 0.5%;
+  background-color: #000;
+  height: 99%;
+  width: 99%;
+  border-radius: 8px;
+  border: 1px solid rgba(131, 131, 131, 0.2);
+}
+
+@media screen and (max-width:1600px) {
+  .service_container .service_cards h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #serviceImg {
+    display: none;
+  }
+
+  .service_container {
+    gap: 30px;
+  }
+  
+  .service_container  .service_cards {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service_container {
+    flex-direction: column;
+  }
+
+  .service_container  .service_cards {
+    padding: 0;
+  }
+
+  .service_container .service_cards:nth-of-type(2) .service_card p,
+  .service_container .service_cards:nth-of-type(2) .service_card h3 {
+    text-align: start;
+  }
+
+  .service_container .service_cards:nth-of-type(2) .service_card {
+    align-items: flex-start;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import aboutCSS from "./About.module.css";
-import img from "./../../assets/about-img-.jpg" 
-import img1 from "./../../assets/about-img-1.jpg" 
+import aboutImg1 from "./../../assets/about-img-.jpg" 
+import aboutImg2 from "./../../assets/about-img-1.jpg" 
 import about_card_img1 from "./../../assets/about-card01.png"
 import about_card_img2 from "./../../assets/about-card02.png"
 
@@ -17,8 +17,8 @@ function About() {
 
       <div className={aboutCSS.about}>
         <div className={aboutCSS.about_img}>
-          <img src={img} alt="about-img" />
-          <img src={img1} alt="about-img1" />
+          <img src={aboutImg1} alt="about-img" />
+          <img src={aboutImg2} alt="about-img1" />
         </div>
         <div className={aboutCSS.about_content}>
           <small className="section_title">(About Us)</small>
