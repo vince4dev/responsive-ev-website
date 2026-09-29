@@ -5,7 +5,7 @@ import img1 from "./../../assets/features.jpg";
 
 function Features() {
   return (
-    <div className={`${featuresCSS.features_wrapper} section`}>
+    <div className={`${featuresCSS.features_wrapper} section`} id="features">
       <small className="section_title">(Main Features)</small>
       <h2>Elevate Your <span>ECO - Journey</span></h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero aliquid perferendis, quibusdam maiores.</p>

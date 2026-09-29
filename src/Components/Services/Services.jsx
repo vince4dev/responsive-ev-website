@@ -9,7 +9,7 @@ import service_img from "./../../assets/Service_img.png";
 
 function services() {
   return (
-    <div className={`${servicesCSS.service_wrapper} section`}>
+    <div className={`${servicesCSS.service_wrapper} section`} id="services">
       <small className="section_title">(Our Services)</small>
       <h2>Excellent & BGest Service</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptate natus doloribus autem fugiat aspernatur!</p>

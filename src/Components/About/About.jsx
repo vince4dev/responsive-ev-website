@@ -7,7 +7,7 @@ import about_card_img2 from "./../../assets/about-card02.png"
 
 function About() {
   return (
-    <div className={`${aboutCSS.about_wrapper} section`}>
+    <div className={`${aboutCSS.about_wrapper} section`} id="about">
       <div className={aboutCSS.counters}>
         <p>7.5M+ <span>Charging Station Initiated</span></p>
         <p>12K+ <span>Charging Station In Network</span></p>

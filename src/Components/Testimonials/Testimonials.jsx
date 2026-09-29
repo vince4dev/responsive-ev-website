@@ -10,7 +10,7 @@ import { Autoplay } from 'swiper/modules';
 
 function Testimonials() {
   return (
-    <div className={`${testimonialCSS.testimonial_wrapper} section`}>
+    <div className={`${testimonialCSS.testimonial_wrapper} section`} id="testimonials">
       <div className={testimonialCSS.swiper_content}>
         <Swiper 
           className={testimonialCSS.swiper}
